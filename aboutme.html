@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hector Castillo/About Me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=0.5, maximun-scale=2.0, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <script src="portafolio.js"></script>
+        <script src="https://kit.fontawesome.com/f12bcccd1e.js" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>    
+        <!-- Menú de barra contacto, sobre mi, proyectos, inicio -->   
+        <header>
+            <div class="topnav" id="myTopnav">  
+                <a href="index.html" class="active" id="logoname">HECTOR CASTILLO</a>
+                <a href="aboutme.html" id="contact">ABOUT ME</a>
+                <a href="HectorCastillo.pdf" download="HectorCastillo">CURRICULUM</a>
+                <a href="myeducation.html" id="education">MY EDUCATION</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="javascript:void(0);" class="icon" onClick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </header>
+
+        <!-- About me section Héctor Castillo -->
+
+        <section class="aboutMe">
+            <div class="aboutprofile">
+                <img src="imagen/hector.jpg" class="aboutimage" alt="image">
+                <div>
+                    <h1>Hi, I'm Hector Castillo. <br><span>Front End Web Developer based in Barcelona.</span></h1>
+
+                    <p>A Front-end developer and designer with 2+ years experience.</p>
+                    <p>I am passionate about using my own code to build aesthetic websites.
+                        My main languages are HTML5, CSS3, Responsive web design and bootstrap 4.</p>
+                    <p>I also enjoy working with JavaScript and JS frameworks; <br>Scriptaculous, Dojo and jQuery. 
+                        I also have experience with version <br>control system APIs (Github).</p>
+
+                    <p>Please get in touch for more information <a href="mailto:hectorcast25@gmail.com">hectorcast25@gmail.com</a>.</p>
+
+                    <a class="button1" href="https://www.linkedin.com/in/hectorcast25" target="_blank">Ver Linkedin</a> 
+                    <a class="button2" href="https://github.com/Hectcast25" target="_blank">Ver Github</a> 
+                </div>
+            </div>     
+        </section>    
+
+        <!-- Pie de página -->
+        <footer class="piepag">
+            <h2>Created by Hector Castillo</h2> 
+            <div class="sociallinks">
+                <a href="https://www.linkedin.com/in/hectorcast25" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Hectcast25" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <img src="//www.w3.org/Icons/WWW/w3c_home_nb" alt="W3C" width="72" height="47">
+            <button onclick="botonArriba()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        </footer> 
+
+        <!-- Scripts de funciones -->
+        <script>
+            // Boton
+            let mybutton = document.getElementById("myBtn");
+
+//Cuando haces Scroll down
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+//Boton Scroll top
+            function botonArriba() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script>
+            //Destinos enlaces menú bar
+            function IrA(destino)
+            {
+                window.location.hash = destino;
+            }
+        </script>
+
+    </body>
+</html>

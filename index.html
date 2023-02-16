@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hector Castillo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimun-scale=0.5, maximun-scale=2.0, user-scalable=yes">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <script src="portafolio.js"></script>
+        <script src="https://kit.fontawesome.com/f12bcccd1e.js" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body> 
+
+        <!-- Menú de barra contacto, sobre mi, proyectos, inicio -->   
+        <header>
+            <div class="topnav" id="myTopnav">  
+                <a href="index.html" class="active" id="logoname">HECTOR CASTILLO</a>
+                <a href="aboutme.html" id="contact">ABOUT ME</a>
+                <a href="HectorCastillo.pdf" download="HectorCastillo">CURRICULUM</a>
+                <a href="myeducation.html" id="education">MY EDUCATION</a>
+                <a onClick="IrA('#proyecto')">PROJECTS</a>
+                <a href="javascript:void(0);" class="icon" onClick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </header>
+
+        <!-- Section Intro Héctor Castillo -->
+        <div id="section1">
+            <div class="textoprincipal">          
+                <h1>Hector Castillo</h1>
+                <h2>Front End Web Developer</h2>
+                <h2>BCN SPAIN</h2>
+                <h2>PTY PANAMA</h2>
+            </div>
+            <div class="flechadown">
+                <a href="#proyecto" title="Go down"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+
+        <!-- Section about me SKILLS-->
+        <section>
+            <div class="aboutme_skills">
+                <h2>MY SKILLS:</h2>
+                <ul class="aboutme_skillslist">
+                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+                    <li><i class="fa-brands fa-square-js"></i>JAVASCRIPT</li>
+                    <li><i class="fa-brands fa-js"></i>JQUERY</li>
+                    <li><i class="fa-brands fa-js"></i>PROTOTYPE</li>
+                    <li><i class="fa-brands fa-js"></i>DOJO</li>
+                    <li><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i>RESPONSIVE DESIGN</li>
+                    <li><i class="fa-solid fa-database"></i>SQL</li>
+                    <li><i class="fa-brands fa-python"></i>PYTHON</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section Portafolio -->
+        <section>
+            <div class="projectsdev">
+                <h2>PORTFOLIO</h2>
+                <a class="buttonproy" href="projects.html">More Projects</a>
+            </div>            
+            <div class="container" id="proyecto">
+                <img src="imagen/gandb.png" alt="gnb" class="image">
+                <div class="overlay">
+                    <a href="https://mycourses.greensbeansschool.com/" target="_blank">
+                        <div class="text">Greens Beans School<br>Made with: CMS WebFlow</div>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <img src="imagen/dvent.png" alt="dvento" class="image">
+                <div class="overlay">
+                    <a href="https://www.dvento.es/" target="_blank">
+                        <div class="text">D'ventos<br>Made with: CMS WordPress</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="piepag">
+            <h2>Created by Hector Castillo</h2> 
+            <div class="sociallinks">
+                <a href="https://www.linkedin.com/in/hectorcast25" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Hectcast25" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <img src="//www.w3.org/Icons/WWW/w3c_home_nb" alt="W3C" width="72" height="47">
+            <button onclick="botonArriba()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+        </footer> 
+
+        <!-- Scripts de funciones -->
+        <script>
+            // Boton
+            let mybutton = document.getElementById("myBtn");
+
+//Cuando haces Scroll down
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+//Boton Scroll top
+            function botonArriba() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script>
+            //Destinos enlaces menú bar
+            function IrA(destino)
+            {
+                window.location.hash = destino;
+            }
+        </script>
+
+    </body>
+</html>
