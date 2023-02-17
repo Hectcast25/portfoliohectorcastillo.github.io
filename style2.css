@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
-*{
-    margin: auto;
-   }
 body {
     background: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -109,6 +106,7 @@ p{
 /*aboutMe profile and image page2*/
 .aboutMe {
     width: 75%;
+    margin: auto;
 }
 
 .aboutimage{
