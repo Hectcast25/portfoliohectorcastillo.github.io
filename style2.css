@@ -431,6 +431,7 @@ p{
     }
     .aboutme_skills h2{
         font-size: 20pt;
+        padding: 1em;
     }
 
     .projectsdev h2{
