@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+* {
+    margin: auto;
+}
 body {
     background: #FFFFFF;
     font-family: 'Roboto', sans-serif;
